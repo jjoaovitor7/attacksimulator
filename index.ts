@@ -12,11 +12,13 @@ let TheHero: InstanceType<typeof Hero>;
     readline.question("Favor, inserir o nome do Aventureiro:\n", resolve);
   });
 
-  console.log("\n");
+  console.log();
 
   const age = await new Promise(resolve => {
     readline.question("Favor, inserir a idade do Aventureiro:\n", resolve);
   });
+
+  console.log();
 
   TheHero = new Hero(name, age);
 
